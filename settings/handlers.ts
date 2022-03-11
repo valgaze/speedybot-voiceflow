@@ -9,13 +9,16 @@ const handlers: BotHandler[] = [
 			const $bot = $(bot)
 			const vf = new Voiceflow(apiKey)
 
+			let res;
 			let session = await $bot.getData('session')
 			if (!session) {
 				session = $bot.rando()
 				await $bot.saveData('session', session)
+				// Send a launch request here??
+				res = await vf.BAD_IMPLEMENTATION_LAUNCH(session)
+			} else {
+				res = await vf.send(session, trigger.text)
 			}
-
-			const res = await vf.send(session, trigger.text)
 
 			for (let i = 0; i < res.length; i++) {
 				const item = res[i]

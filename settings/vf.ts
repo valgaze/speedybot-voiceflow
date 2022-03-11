@@ -59,6 +59,24 @@ export class Voiceflow {
           });
           return response.data
     }
+
+    public async BAD_IMPLEMENTATION_LAUNCH(sessionId) {
+      const response = await axios({
+        method: 'POST',
+        baseURL: 'https://general-runtime.voiceflow.com',
+        url: `/state/user/${sessionId}/interact`,
+        headers: {
+          Authorization: this.apiKey,
+        },
+        data: { type: 'launch '},
+      });
+      console.log("data?", response.data)
+
+      return this.tidyResponse(response.data)
+
+
+    }
+
 }
 
 // todo: more response types, dialogflow?
