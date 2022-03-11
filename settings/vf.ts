@@ -1,7 +1,17 @@
 import axios from 'axios'
 
+
 export class Voiceflow {
-    constructor(public apiKey: string) {}
+    public axios: any
+    constructor(public apiKey: string) {
+        this.axios = axios.create({
+            baseURL: 'https://general-runtime.voiceflow.com',
+            headers: {
+              Authorization: this.apiKey,
+            },
+            method: 'POST',
+        });
+    }
 
     public tidyResponse(response: (VFText | VFVisual | VFChoice)[]): TransformedResponse[] {
         const responses:({ type: TypeKeys, value: string} | 
@@ -30,11 +40,10 @@ export class Voiceflow {
                 }
             }
         })
-
         return responses.concat(choices)
     }
 
-    public async send(sessionId: string, message: string, payload: any = {}){ 
+    public async send(sessionId: string, message: string, payload: any = {}): Promise<TransformedResponse[]>{ 
         const response = await this._send(sessionId, message, payload)
         return this.tidyResponse(response)
     }
@@ -48,17 +57,21 @@ export class Voiceflow {
             ...payload
         }
 
-        const response = await axios({
-            method: 'POST',
-            baseURL: 'https://general-runtime.voiceflow.com',
+        const response = await this.axios({
             url: `/state/user/${sessionId}/interact`,
-            headers: {
-              Authorization: this.apiKey,
-            },
             data,
           });
           return response.data
     }
+
+    public async launch(sessionId): Promise<TransformedResponse[]> {
+      const response = await this.axios({
+        url: `/state/user/${sessionId}/interact`,
+        data: { type: 'launch '},
+      })
+      return this.tidyResponse(response.data)
+    }
+
 }
 
 // todo: more response types, dialogflow?
