@@ -1,5 +1,5 @@
 import { BotHandler, $, SpeedyCard} from 'speedybot'
-import { Voiceflow } from './vf'
+import { Voiceflow, TransformedResponse } from './vf'
 import { apiKey } from './voiceflow.json'
 
 const handlers: BotHandler[] = [
@@ -9,14 +9,18 @@ const handlers: BotHandler[] = [
 			const $bot = $(bot)
 			const vf = new Voiceflow(apiKey)
 
+			let res: TransformedResponse[];
 			let session = await $bot.getData('session')
 			if (!session) {
 				session = $bot.rando()
 				await $bot.saveData('session', session)
+
+				// "launch"  will reset the user and start from the first block
+				res = await vf.launch(session)
+			} else {
+				res = await vf.send(session, trigger.text)
 			}
-
-			const res = await vf.send(session, trigger.text)
-
+		
 			for (let i = 0; i < res.length; i++) {
 				const item = res[i]
 

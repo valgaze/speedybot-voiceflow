@@ -16,6 +16,12 @@
 
 ![img](./docs/assets/vf_key.png)
 
+## 3) Upload the Voiceflow project
+
+- To get up and running quickly you can you can use the **[settings/icecream_shop.vf](./settings/icecream_shop.vf)** file as a starter project
+
+- From your voiceflow dashboard, find the import button in the top right corner and select your project file ![img](./docs/assets/import_vf.png)
+
 ## 3) Boot
 
 ```
