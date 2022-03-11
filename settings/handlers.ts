@@ -16,6 +16,7 @@ const handlers: BotHandler[] = [
 				await $bot.saveData('session', session)
 				// Send a launch request here??
 				res = await vf.BAD_IMPLEMENTATION_LAUNCH(session)
+
 			} else {
 				res = await vf.send(session, trigger.text)
 			}

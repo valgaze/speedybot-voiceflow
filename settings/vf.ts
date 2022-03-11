@@ -34,7 +34,7 @@ export class Voiceflow {
         return responses.concat(choices)
     }
 
-    public async send(sessionId: string, message: string, payload: any = {}){ 
+    public async send(sessionId: string, message: string, payload: any = {}): Promise<TransformedResponse[]>{ 
         const response = await this._send(sessionId, message, payload)
         return this.tidyResponse(response)
     }
@@ -60,7 +60,7 @@ export class Voiceflow {
           return response.data
     }
 
-    public async BAD_IMPLEMENTATION_LAUNCH(sessionId) {
+    public async BAD_IMPLEMENTATION_LAUNCH(sessionId): Promise<TransformedResponse[]> {
       const response = await axios({
         method: 'POST',
         baseURL: 'https://general-runtime.voiceflow.com',
@@ -69,12 +69,22 @@ export class Voiceflow {
           Authorization: this.apiKey,
         },
         data: { type: 'launch '},
+      })
+      return this.tidyResponse(response.data)
+    }
+
+    public async req(sessionId) {
+      const response = await axios({
+        method: 'GET',
+        baseURL: 'https://general-runtime.voiceflow.com',
+        url: `/state/user/${sessionId}/interact`,
+        headers: {
+          Authorization: this.apiKey,
+        },
       });
-      console.log("data?", response.data)
+      console.log("data?", JSON.stringify(response.data, null, 2))
 
       return this.tidyResponse(response.data)
-
-
     }
 
 }
