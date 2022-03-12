@@ -1,7 +1,17 @@
 import axios from 'axios'
 
+
 export class Voiceflow {
-    constructor(public apiKey: string) {}
+    public axios: any
+    constructor(public apiKey: string) {
+        this.axios = axios.create({
+            baseURL: 'https://general-runtime.voiceflow.com',
+            headers: {
+              Authorization: this.apiKey,
+            },
+            method: 'POST',
+        });
+    }
 
     public tidyResponse(response: (VFText | VFVisual | VFChoice)[]): TransformedResponse[] {
         const responses:({ type: TypeKeys, value: string} | 
@@ -30,7 +40,6 @@ export class Voiceflow {
                 }
             }
         })
-
         return responses.concat(choices)
     }
 
@@ -48,42 +57,18 @@ export class Voiceflow {
             ...payload
         }
 
-        const response = await axios({
-            method: 'POST',
-            baseURL: 'https://general-runtime.voiceflow.com',
+        const response = await this.axios({
             url: `/state/user/${sessionId}/interact`,
-            headers: {
-              Authorization: this.apiKey,
-            },
             data,
           });
           return response.data
     }
 
-    public async BAD_IMPLEMENTATION_LAUNCH(sessionId): Promise<TransformedResponse[]> {
-      const response = await axios({
-        method: 'POST',
-        baseURL: 'https://general-runtime.voiceflow.com',
+    public async launch(sessionId): Promise<TransformedResponse[]> {
+      const response = await this.axios({
         url: `/state/user/${sessionId}/interact`,
-        headers: {
-          Authorization: this.apiKey,
-        },
         data: { type: 'launch '},
       })
-      return this.tidyResponse(response.data)
-    }
-
-    public async req(sessionId) {
-      const response = await axios({
-        method: 'GET',
-        baseURL: 'https://general-runtime.voiceflow.com',
-        url: `/state/user/${sessionId}/interact`,
-        headers: {
-          Authorization: this.apiKey,
-        },
-      });
-      console.log("data?", JSON.stringify(response.data, null, 2))
-
       return this.tidyResponse(response.data)
     }
 
