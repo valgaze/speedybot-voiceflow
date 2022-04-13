@@ -1,80 +1,85 @@
-import { BotHandler, $, SpeedyCard} from 'speedybot'
-import { Voiceflow, TransformedResponse } from './vf'
-import { apiKey } from './voiceflow.json'
+import {BotHandler, $, SpeedyCard} from 'speedybot'
+import {Voiceflow, TransformedResponse} from './vf'
+import {apiKey} from './voiceflow.json'
 
 const handlers: BotHandler[] = [
-	{
-		keyword: '<@catchall>',
-		async handler(bot, trigger) {
-			const $bot = $(bot)
-			const vf = new Voiceflow(apiKey)
+  {
+    keyword: '<@catchall>',
+    async handler(bot, trigger) {
+      const $bot = $(bot)
+      const vf = new Voiceflow(apiKey, bot)
 
-			let res: TransformedResponse[];
-			let session = await $bot.getData('session')
-			if (!session) {
-				session = $bot.rando()
-				await $bot.saveData('session', session)
+      let res: TransformedResponse[]
+      let session = await $bot.getData('session')
+      if (!session) {
+        session = $bot.rando()
+        await $bot.saveData('session', session)
 
-				// "launch"  will reset the user and start from the first block
-				res = await vf.launch(session)
-			} else {
-				res = await vf.send(session, trigger.text)
-			}
-		
-			for (let i = 0; i < res.length; i++) {
-				const item = res[i]
+        // "launch"  will reset the user and start from the first block
+        res = await vf.launch(session)
+      } else {
+        res = await vf.send(session, trigger.text)
+      }
 
-				const { type, value } = item
-				if (type === 'text') {
-					await bot.say(value)
-				}
+      for (let i = 0; i < res.length; i++) {
+        const item = res[i]
 
-				if (type === 'choice') {
-					await $bot.sendChips(value as string[])
-				}
+        const {type, value} = item
+        if (type === 'text') {
+          await bot.say(value)
+        }
 
-				if (type === 'visual' && value) {
-					const card = new SpeedyCard()
-										.setImage(value as string)
+        if (type === 'choice') {
+          await $bot.sendChips(value as string[])
+        }
 
-					await bot.sendCard(card.render(), value as string)
-				}
-			}
-		},
-		helpText: 'Runs for all inputs'
-	},
-	{
-		keyword: '<@fileupload>',
-		async handler(bot, trigger) {
-			const supportedFiles = ['json', 'txt', 'csv']
-            // take 1st file uploaded, note this is just a URL & not authenticated
-            const [file] = trigger.message.files
+        if (type === 'visual' && value) {
+          const card = new SpeedyCard().setImage(value as string)
 
-            // Retrieve file data
-			const fileData = await $(bot).getFile(file)
-			const { extension, type } = fileData
+          await bot.sendCard(card.render(), value as string)
+        }
+      }
+    },
+    helpText: 'Runs for all inputs',
+  },
+  {
+    keyword: '<@fileupload>',
+    async handler(bot, trigger) {
+      const supportedFiles = ['json', 'txt', 'csv']
+      // take 1st file uploaded, note this is just a URL & not authenticated
+      const [file] = trigger.message.files
 
-            if (supportedFiles.includes(extension)) {
-                const {data} = fileData
-                // bot.snippet will format json or text data into markdown format
-                bot.say({markdown: $(bot).snippet(data)})
+      // Retrieve file data
+      const fileData = await $(bot).getFile(file)
+      const {extension, type} = fileData
 
-				// ex. Send data somewhere or to 3rd-party service
-            } else {
-                bot.say(`Sorry, somebody needs to add support to handle *.${extension} (${type}) files`)
-            }
-		},
-		helpText: 'A special handler that will activate whenever a file is uploaded'
-	},
-	{
-		keyword: '<@submit>',
-		handler(bot, trigger) {
-			// Ex. From here data could be transmitted to another service or a 3rd-party integrationn
-			bot.say(`Submission received! You sent us ${JSON.stringify(trigger.attachmentAction.inputs)}`)
+      if (supportedFiles.includes(extension)) {
+        const {data} = fileData
+        // bot.snippet will format json or text data into markdown format
+        bot.say({markdown: $(bot).snippet(data)})
 
-		},
-		helpText: `A special handler that fires anytime a user submits data (you can only trigger this handler by tapping Submit in a card)`
-	},
+        // ex. Send data somewhere or to 3rd-party service
+      } else {
+        bot.say(
+          `Sorry, somebody needs to add support to handle *.${extension} (${type}) files`,
+        )
+      }
+    },
+    helpText:
+      'A special handler that will activate whenever a file is uploaded',
+  },
+  {
+    keyword: '<@submit>',
+    handler(bot, trigger) {
+      // Ex. From here data could be transmitted to another service or a 3rd-party integrationn
+      bot.say(
+        `Submission received! You sent us ${JSON.stringify(
+          trigger.attachmentAction.inputs,
+        )}`,
+      )
+    },
+    helpText: `A special handler that fires anytime a user submits data (you can only trigger this handler by tapping Submit in a card)`,
+  },
 ]
 
 export default handlers
