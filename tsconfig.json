@@ -15,19 +15,9 @@
     "baseUrl": ".",
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "*": [
-        "node_modules/*",
-      ]
+      "*": ["node_modules/*"]
     }
   },
-  "include": [
-    "src/**/*",
-		"test/**/*",
-		"package.json"
-  ],
-  "exclude": [
-    "src/frontend",
-    "node_modules",
-    "dist"
-  ]
+  "include": ["src/**/*", "test/**/*", "package.json"],
+  "exclude": ["node_modules", "dist"]
 }

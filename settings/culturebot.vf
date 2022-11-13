@@ -1,0 +1,5303 @@
+{
+  "_version": "1.2",
+  "project": {
+    "_id": "6371c9b4c8ff0d00074de5a2",
+    "name": "CultureBot",
+    "teamID": "bKn5rOPE9m",
+    "devVersion": "6371c9b4c8ff0d00074de5a3",
+    "platform": "chatbot",
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "members": [],
+    "linkType": "STRAIGHT",
+    "image": "",
+    "customThemes": [],
+    "_version": 1.2,
+    "creatorID": 79417,
+    "privacy": "private",
+    "liveVersion": "6371c9bafb75130007eb369a",
+    "prototype": {
+      "nlp": {
+        "type": "LUIS",
+        "appID": "3feb37c4-69aa-471d-b37d-083852c9cd66",
+        "resourceID": "ojomonac:https://westus.api.cognitive.microsoft.com/"
+      },
+      "data": {}
+    },
+    "createdAt": "2022-11-14T04:53:08.000Z"
+  },
+  "version": {
+    "_id": "6371c9b4c8ff0d00074de5a3",
+    "variables": [
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "newVisitor",
+      "hasVisited",
+      "randomValue"
+    ],
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "lk30e3rvo",
+          "name": "My Team",
+          "inputs": [
+            {
+              "text": "team resources",
+              "slots": []
+            },
+            {
+              "text": "my team",
+              "slots": []
+            },
+            {
+              "text": "team",
+              "slots": []
+            },
+            {
+              "text": "Where do I go to find my team's docs?",
+              "slots": []
+            },
+            {
+              "text": "how do I see the meeting notes?",
+              "slots": []
+            },
+            {
+              "text": "where is the main codebase",
+              "slots": []
+            },
+            {
+              "text": "Check in with my team",
+              "slots": []
+            },
+            {
+              "text": "Checkin",
+              "slots": []
+            },
+            {
+              "text": "Weekly checkin",
+              "slots": []
+            },
+            {
+              "text": "where's the team board?",
+              "slots": []
+            },
+            {
+              "text": "miroboard",
+              "slots": []
+            },
+            {
+              "text": "can you show me the miro board?",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "VF.YES",
+          "name": "VF.YES",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "VF.NO",
+          "name": "VF.NO",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "VF.STOP",
+          "name": "VF.STOP",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "VF.NEXT",
+          "name": "VF.NEXT",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "VF.PAUSE",
+          "name": "VF.PAUSE",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "VF.CANCEL",
+          "name": "VF.CANCEL",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "VF.RESUME",
+          "name": "VF.RESUME",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "VF.REPEAT",
+          "name": "VF.REPEAT",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "VF.PREVIOUS",
+          "name": "VF.PREVIOUS",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "VF.START_OVER",
+          "name": "VF.START_OVER",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "ua2d23vtp",
+          "name": "Lab",
+          "inputs": [
+            {
+              "text": "🔬",
+              "slots": []
+            },
+            {
+              "text": "voiceflow experiments",
+              "slots": []
+            },
+            {
+              "text": "voiceflow",
+              "slots": []
+            },
+            {
+              "text": "Show me test features",
+              "slots": []
+            },
+            {
+              "text": "show the experiment",
+              "slots": []
+            },
+            {
+              "text": "experiment",
+              "slots": []
+            },
+            {
+              "text": "experiments",
+              "slots": []
+            },
+            {
+              "text": "experimen",
+              "slots": []
+            },
+            {
+              "text": "show experiments",
+              "slots": []
+            },
+            {
+              "text": "show me lab",
+              "slots": []
+            },
+            {
+              "text": "gimme the lab",
+              "slots": []
+            },
+            {
+              "text": "show me the lab",
+              "slots": []
+            },
+            {
+              "text": "show me experiments",
+              "slots": []
+            },
+            {
+              "text": "Lab",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "gm1f13v5o",
+          "name": "Games",
+          "inputs": [
+            {
+              "text": "team games",
+              "slots": []
+            },
+            {
+              "text": "lunchbreak",
+              "slots": []
+            },
+            {
+              "text": "team fun",
+              "slots": []
+            },
+            {
+              "text": "fun",
+              "slots": []
+            },
+            {
+              "text": "game",
+              "slots": []
+            },
+            {
+              "text": "play",
+              "slots": []
+            },
+            {
+              "text": "team activity",
+              "slots": []
+            },
+            {
+              "text": "bond over a game",
+              "slots": []
+            },
+            {
+              "text": "team games",
+              "slots": []
+            },
+            {
+              "text": "gaming",
+              "slots": []
+            },
+            {
+              "text": "games",
+              "slots": []
+            },
+            {
+              "text": "I want to play a game",
+              "slots": []
+            }
+          ],
+          "slots": []
+        },
+        {
+          "key": "8q21i3vhy",
+          "name": "admin",
+          "inputs": [
+            {
+              "text": "admin stuff",
+              "slots": []
+            },
+            {
+              "text": "i need to take care of admin stuff",
+              "slots": []
+            },
+            {
+              "text": " i need to be out",
+              "slots": []
+            },
+            {
+              "text": "absense",
+              "slots": []
+            },
+            {
+              "text": "absent",
+              "slots": []
+            },
+            {
+              "text": "absence",
+              "slots": []
+            },
+            {
+              "text": "i need a day off",
+              "slots": []
+            },
+            {
+              "text": "admin page",
+              "slots": []
+            },
+            {
+              "text": "show me admin options",
+              "slots": []
+            },
+            {
+              "text": "admin",
+              "slots": []
+            },
+            {
+              "text": "stocks",
+              "slots": []
+            },
+            {
+              "text": "insurance",
+              "slots": []
+            },
+            {
+              "text": "paperwork",
+              "slots": []
+            },
+            {
+              "text": "hr stuff",
+              "slots": []
+            },
+            {
+              "text": "benefits",
+              "slots": []
+            },
+            {
+              "text": "feedback",
+              "slots": []
+            },
+            {
+              "text": "directory",
+              "slots": []
+            },
+            {
+              "text": "company directory",
+              "slots": []
+            },
+            {
+              "text": "paypal docs",
+              "slots": []
+            },
+            {
+              "text": "out of office",
+              "slots": []
+            },
+            {
+              "text": "i have a doctor's appointment",
+              "slots": []
+            },
+            {
+              "text": "add expenses",
+              "slots": []
+            },
+            {
+              "text": "timesheets",
+              "slots": []
+            }
+          ],
+          "slots": []
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ],
+        "defaultVoice": "Alexa"
+      },
+      "publishing": {},
+      "platform": "general"
+    },
+    "name": "Initial Version",
+    "projectID": "6371c9b4c8ff0d00074de5a2",
+    "manualSave": false,
+    "autoSaveFromRestore": false,
+    "topics": [
+      {
+        "sourceID": "6371c9b4c8ff0d00074de5a6",
+        "type": "DIAGRAM"
+      }
+    ],
+    "components": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "6371c9b4c8ff0d00074de5a4"
+      },
+      {
+        "type": "DIAGRAM",
+        "sourceID": "6371c9b4c8ff0d00074de5a5"
+      }
+    ],
+    "rootDiagramID": "6371c9b4c8ff0d00074de5a6",
+    "creatorID": 79417,
+    "_version": 3.91,
+    "domains": [
+      {
+        "id": "cl8y4yt3h6ix607nm6fx9e1be",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "6371c9b4c8ff0d00074de5a6"
+        ],
+        "rootDiagramID": "6371c9b4c8ff0d00074de5a6"
+      }
+    ],
+    "prototype": {
+      "data": {
+        "name": "CultureBot",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [
+          {
+            "key": "lk30e3rvo",
+            "name": "My Team",
+            "inputs": [
+              {
+                "text": "team resources",
+                "slots": []
+              },
+              {
+                "text": "my team",
+                "slots": []
+              },
+              {
+                "text": "team",
+                "slots": []
+              },
+              {
+                "text": "Where do I go to find my team's docs?",
+                "slots": []
+              },
+              {
+                "text": "how do I see the meeting notes?",
+                "slots": []
+              },
+              {
+                "text": "where is the main codebase",
+                "slots": []
+              },
+              {
+                "text": "Check in with my team",
+                "slots": []
+              },
+              {
+                "text": "Checkin",
+                "slots": []
+              },
+              {
+                "text": "Weekly checkin",
+                "slots": []
+              },
+              {
+                "text": "where's the team board?",
+                "slots": []
+              },
+              {
+                "text": "miroboard",
+                "slots": []
+              },
+              {
+                "text": "can you show me the miro board?",
+                "slots": []
+              }
+            ],
+            "slots": []
+          },
+          {
+            "key": "ua2d23vtp",
+            "name": "Lab",
+            "inputs": [
+              {
+                "text": "🔬",
+                "slots": []
+              },
+              {
+                "text": "voiceflow experiments",
+                "slots": []
+              },
+              {
+                "text": "voiceflow",
+                "slots": []
+              },
+              {
+                "text": "Show me test features",
+                "slots": []
+              },
+              {
+                "text": "show the experiment",
+                "slots": []
+              },
+              {
+                "text": "experiment",
+                "slots": []
+              },
+              {
+                "text": "experiments",
+                "slots": []
+              },
+              {
+                "text": "experimen",
+                "slots": []
+              },
+              {
+                "text": "show experiments",
+                "slots": []
+              },
+              {
+                "text": "show me lab",
+                "slots": []
+              },
+              {
+                "text": "gimme the lab",
+                "slots": []
+              },
+              {
+                "text": "show me the lab",
+                "slots": []
+              },
+              {
+                "text": "show me experiments",
+                "slots": []
+              },
+              {
+                "text": "Lab",
+                "slots": []
+              }
+            ],
+            "slots": []
+          },
+          {
+            "key": "gm1f13v5o",
+            "name": "Games",
+            "inputs": [
+              {
+                "text": "team games",
+                "slots": []
+              },
+              {
+                "text": "lunchbreak",
+                "slots": []
+              },
+              {
+                "text": "team fun",
+                "slots": []
+              },
+              {
+                "text": "fun",
+                "slots": []
+              },
+              {
+                "text": "game",
+                "slots": []
+              },
+              {
+                "text": "play",
+                "slots": []
+              },
+              {
+                "text": "team activity",
+                "slots": []
+              },
+              {
+                "text": "bond over a game",
+                "slots": []
+              },
+              {
+                "text": "gaming",
+                "slots": []
+              },
+              {
+                "text": "games",
+                "slots": []
+              },
+              {
+                "text": "I want to play a game",
+                "slots": []
+              }
+            ],
+            "slots": []
+          },
+          {
+            "key": "8q21i3vhy",
+            "name": "admin",
+            "inputs": [
+              {
+                "text": "admin stuff",
+                "slots": []
+              },
+              {
+                "text": "i need to take care of admin stuff",
+                "slots": []
+              },
+              {
+                "text": "i need to be out",
+                "slots": []
+              },
+              {
+                "text": "absense",
+                "slots": []
+              },
+              {
+                "text": "absent",
+                "slots": []
+              },
+              {
+                "text": "absence",
+                "slots": []
+              },
+              {
+                "text": "i need a day off",
+                "slots": []
+              },
+              {
+                "text": "admin page",
+                "slots": []
+              },
+              {
+                "text": "show me admin options",
+                "slots": []
+              },
+              {
+                "text": "admin",
+                "slots": []
+              },
+              {
+                "text": "stocks",
+                "slots": []
+              },
+              {
+                "text": "insurance",
+                "slots": []
+              },
+              {
+                "text": "paperwork",
+                "slots": []
+              },
+              {
+                "text": "hr stuff",
+                "slots": []
+              },
+              {
+                "text": "benefits",
+                "slots": []
+              },
+              {
+                "text": "feedback",
+                "slots": []
+              },
+              {
+                "text": "directory",
+                "slots": []
+              },
+              {
+                "text": "company directory",
+                "slots": []
+              },
+              {
+                "text": "paypal docs",
+                "slots": []
+              },
+              {
+                "text": "out of office",
+                "slots": []
+              },
+              {
+                "text": "i have a doctor's appointment",
+                "slots": []
+              },
+              {
+                "text": "add expenses",
+                "slots": []
+              },
+              {
+                "text": "timesheets",
+                "slots": []
+              }
+            ],
+            "slots": []
+          }
+        ],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "programID": "6371c9b4c8ff0d00074de5a6",
+            "storage": {},
+            "variables": {}
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "slotsMap": {},
+        "extraSlots": [],
+        "extraIntents": [],
+        "usedIntentsSet": [
+          "8q21i3vhy",
+          "lk30e3rvo",
+          "gm1f13v5o",
+          "ua2d23vtp"
+        ],
+        "platform": "chatbot",
+        "goToIntentsSet": [],
+        "products": {},
+        "interfaces": [],
+        "permissions": [],
+        "usedCustomBlocks": []
+      },
+      "settings": {
+        "brandColor": "#3D81E2"
+      },
+      "platform": "chatbot"
+    },
+    "templateDiagramID": "633fce09154e9c2d5657cb84"
+  },
+  "diagrams": {
+    "6371c9b4c8ff0d00074de5a4": {
+      "_id": "6371c9b4c8ff0d00074de5a4",
+      "name": "Component 1",
+      "type": "COMPONENT",
+      "zoom": 100,
+      "offsetX": 272,
+      "offsetY": 104,
+      "modified": 1665327100,
+      "children": [],
+      "variables": [],
+      "menuNodeIDs": [],
+      "creatorID": 79417,
+      "versionID": "6371c9b4c8ff0d00074de5a3",
+      "nodes": {
+        "6342dffcfa944000079eb70e": {
+          "type": "start",
+          "nodeID": "6342dffcfa944000079eb70e",
+          "coords": [
+            360,
+            120
+          ],
+          "data": {
+            "name": "Start",
+            "color": "#43494E",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "id": "6342dffcfa944000079eb70f",
+                  "type": "next",
+                  "target": null
+                }
+              },
+              "dynamic": []
+            },
+            "steps": []
+          }
+        }
+      }
+    },
+    "6371c9b4c8ff0d00074de5a5": {
+      "_id": "6371c9b4c8ff0d00074de5a5",
+      "name": "Component 2",
+      "type": "COMPONENT",
+      "zoom": 100,
+      "offsetX": 272,
+      "offsetY": 104,
+      "modified": 1665527219,
+      "children": [],
+      "variables": [],
+      "menuNodeIDs": [],
+      "creatorID": 79417,
+      "versionID": "6371c9b4c8ff0d00074de5a3",
+      "nodes": {
+        "6345edb3fa944000079eb8a7": {
+          "type": "start",
+          "nodeID": "6345edb3fa944000079eb8a7",
+          "coords": [
+            360,
+            120
+          ],
+          "data": {
+            "name": "Start",
+            "color": "#43494E",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "id": "6345edb3fa944000079eb8a8",
+                  "type": "next",
+                  "target": "6345edc3149fa63892b734b0",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          463.1006622314453,
+                          141.9970703125
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          628.7499237060547,
+                          141.9970703125
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          628.7499237060547,
+                          331.2548828125
+                        ],
+                        "toTop": true,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "steps": []
+          }
+        },
+        "6345edc3149fa63892b734ae": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "voof3lad",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "component?"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6345edc3149fa63892b734af"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6345edc3149fa63892b734ae"
+        },
+        "6345edc3149fa63892b734b0": {
+          "type": "block",
+          "data": {
+            "name": "New Block 1",
+            "steps": [
+              "6345edc3149fa63892b734ae"
+            ],
+            "color": ""
+          },
+          "nodeID": "6345edc3149fa63892b734b0",
+          "coords": [
+            628.75,
+            331.2548828125
+          ]
+        }
+      }
+    },
+    "6371c9b4c8ff0d00074de5a6": {
+      "_id": "6371c9b4c8ff0d00074de5a6",
+      "offsetX": 1115.4855365122942,
+      "offsetY": 679.963665291271,
+      "zoom": 100,
+      "variables": [],
+      "name": "ROOT",
+      "versionID": "6371c9b4c8ff0d00074de5a3",
+      "creatorID": 79417,
+      "modified": 1665125896,
+      "intentStepIDs": [],
+      "type": "TOPIC",
+      "children": [],
+      "menuNodeIDs": [
+        "start00000000000000000000"
+      ],
+      "nodes": {
+        "start00000000000000000000": {
+          "nodeID": "start00000000000000000000",
+          "type": "start",
+          "coords": [
+            -694.3569206403678,
+            -599.9545816140887
+          ],
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "633fce0a90cbb92ca5b7e970",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -758.979794783832,
+                          -577.9580454096988
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": true,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -851.3354030427611,
+                          -579.6211357068528
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          }
+        },
+        "633fce0a90cbb92ca5b7e970": {
+          "type": "block",
+          "data": {
+            "name": "Image block",
+            "color": "",
+            "steps": [
+              "633fce0a90cbb92ca5b7e985"
+            ]
+          },
+          "nodeID": "633fce0a90cbb92ca5b7e970",
+          "coords": [
+            -1016.3357597265797,
+            -606.6213389733332
+          ]
+        },
+        "633fce0a90cbb92ca5b7e985": {
+          "type": "visual",
+          "data": {
+            "name": "Visuals",
+            "image": "https://cm4-production-assets.s3.amazonaws.com/1664418335425-dalle-2022-09-27-20.37.31---a-lifeguard-tower-in-manhattan-beach-on-a-sunny-day-pixel-art.png",
+            "visualType": "image",
+            "canvasVisibility": "full",
+            "dimensions": {
+              "width": 1024,
+              "height": 1024
+            },
+            "frameType": "AUTO",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "6371c7f00c0072f418eadeb6",
+                  "id": "633fce0a90cbb92ca5b7e986",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -850.3238630385741,
+                          -271.14281626628406
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -804.2496900649413,
+                          -274.16539927409656
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "633fce0a90cbb92ca5b7e985",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "633fd8a190cbb92ca5b7ea77": {
+          "type": "goTo",
+          "data": {
+            "name": "",
+            "intent": null,
+            "diagramID": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "633fd8a190cbb92ca5b7ea77"
+        },
+        "633fd8a190cbb92ca5b7ea78": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "633fd8a190cbb92ca5b7ea77"
+            ]
+          },
+          "nodeID": "633fd8a190cbb92ca5b7ea78",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "63409a51806073c10de81d8a": {
+          "type": "block",
+          "data": {
+            "name": "Absence",
+            "color": "#CB627B",
+            "steps": [
+              "63409a51806073c10de81d90"
+            ]
+          },
+          "nodeID": "63409a51806073c10de81d8a",
+          "coords": [
+            1410.8114838734714,
+            -644.4587948167539
+          ]
+        },
+        "63409a51806073c10de81d8c": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "63409a51806073c10de81d96"
+            ]
+          },
+          "nodeID": "63409a51806073c10de81d8c",
+          "coords": [
+            1258.2806186467442,
+            15.910972037848339
+          ]
+        },
+        "63409a51806073c10de81d90": {
+          "type": "cardV2",
+          "data": {
+            "name": "Card",
+            "title": "How to request an absence",
+            "buttons": [
+              {
+                "id": "l76s35nv",
+                "name": "Open Workday",
+                "intent": null
+              },
+              {
+                "id": "cfc63h4f",
+                "name": "Back to start 🔄",
+                "intent": null
+              }
+            ],
+            "imageUrl": "https://cm4-production-assets.s3.amazonaws.com/1668376704286-dalle-2022-11-13-13.36.05---a-sketch-of-a-lifeguard-tower-on-the-beach-in-manhattan-beach-california.png",
+            "description": [
+              {
+                "children": [
+                  {
+                    "text": "To request an absence, make an entry in Workday and then add a calendar event for your team"
+                  }
+                ]
+              }
+            ],
+            "portsV2": {
+              "byKey": {
+                "l76s35nv": {
+                  "type": "",
+                  "target": "63409a51806073c10de81d8c",
+                  "id": "63409a51806073c10de81d93",
+                  "data": {}
+                },
+                "cfc63h4f": {
+                  "type": "",
+                  "target": "637115b46ae15632ace6cf29",
+                  "id": "63409a51806073c10de81d94",
+                  "data": {}
+                }
+              },
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": "637110dd6ae15632ace6cf23",
+                  "id": "63409a51806073c10de81d91",
+                  "data": {}
+                },
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "63409a51806073c10de81d92"
+                }
+              },
+              "dynamic": []
+            },
+            "noMatch": {
+              "types": [
+                "reprompt",
+                "path"
+              ],
+              "pathName": "No match",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "id": "clafj1vu900fu3b7v3r2qmrlg",
+                  "content": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "nodeID": "63409a51806073c10de81d90",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "63409a51806073c10de81d96": {
+          "type": "url",
+          "data": {
+            "name": "",
+            "url": "https://workday.com",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "63409a51806073c10de81d95"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "63409a51806073c10de81d96"
+        },
+        "6340a828806073c10de81f92": {
+          "type": "block",
+          "data": {
+            "name": "Carousel Block",
+            "color": "",
+            "steps": [
+              "6340a828806073c10de81fbf"
+            ]
+          },
+          "nodeID": "6340a828806073c10de81f92",
+          "coords": [
+            2338.9173437162817,
+            659.8589656463264
+          ]
+        },
+        "6340a828806073c10de81f9e": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "6340a828806073c10de81fcc"
+            ]
+          },
+          "nodeID": "6340a828806073c10de81f9e",
+          "coords": [
+            468.88934349517535,
+            -587.6438695283447
+          ]
+        },
+        "6340a828806073c10de81fa0": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "6340a828806073c10de81fcd"
+            ]
+          },
+          "nodeID": "6340a828806073c10de81fa0",
+          "coords": [
+            468.88934349517535,
+            -587.6438695283447
+          ]
+        },
+        "6340a828806073c10de81fa2": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "ze1w43h56",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Here's image 1"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6340a828806073c10de81fa3"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6340a828806073c10de81fa2"
+        },
+        "6340a828806073c10de81fa5": {
+          "type": "visual",
+          "data": {
+            "name": "Visuals",
+            "image": "https://cm4-production-assets.s3.amazonaws.com/1664336325336-dalle-2022-09-27-20.37.31---a-lifeguard-tower-in-manhattan-beach-on-a-sunny-day-pixel-art.png",
+            "visualType": "image",
+            "canvasVisibility": "full",
+            "dimensions": {
+              "width": 1024,
+              "height": 1024
+            },
+            "frameType": "AUTO",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6340a828806073c10de81fa6"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6340a828806073c10de81fa5",
+          "coords": [
+            114.58333333333329,
+            -34.35147573673453
+          ]
+        },
+        "6340a828806073c10de81fa8": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "eajs3hs3",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Here's image #2"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6340a828806073c10de81fa9"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6340a828806073c10de81fa8"
+        },
+        "6340a828806073c10de81fab": {
+          "type": "visual",
+          "data": {
+            "name": "Visuals",
+            "image": "https://cm4-production-assets.s3.amazonaws.com/1664336329989-dalle-2022-09-27-20.37.28---a-lifeguard-tower-in-manhattan-beach-on-a-sunny-day-pixel-art.png",
+            "visualType": "image",
+            "canvasVisibility": "full",
+            "dimensions": {
+              "width": 1024,
+              "height": 1024
+            },
+            "frameType": "AUTO",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6340a828806073c10de81fac"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6340a828806073c10de81fab"
+        },
+        "6340a828806073c10de81fbf": {
+          "type": "carousel",
+          "data": {
+            "name": "Card",
+            "cards": [
+              {
+                "id": "3hs33hvd",
+                "title": "Carousel item 1",
+                "description": [
+                  {
+                    "children": [
+                      {
+                        "text": "Amazing carousel description"
+                      }
+                    ]
+                  }
+                ],
+                "imageUrl": "https://cm4-production-assets.s3.amazonaws.com/1664377143619-dalle-2022-09-27-20.37.28---a-lifeguard-tower-in-manhattan-beach-on-a-sunny-day-pixel-art.png",
+                "buttons": [
+                  {
+                    "id": "kzul3hwa",
+                    "name": "Go to start",
+                    "intent": null
+                  }
+                ]
+              },
+              {
+                "id": "uuw63hj7",
+                "title": "Carousel Item 2",
+                "description": [
+                  {
+                    "children": [
+                      {
+                        "text": "Amazing carousel description again!"
+                      }
+                    ]
+                  }
+                ],
+                "imageUrl": "https://cm4-production-assets.s3.amazonaws.com/1664377366567-dalle-2022-09-27-20.37.24---a-lifeguard-tower-in-manhattan-beach-on-a-sunny-day-pixel-art.png",
+                "buttons": [
+                  {
+                    "id": "msx83htr",
+                    "name": "See \"Mahna Mahna\"",
+                    "intent": null
+                  }
+                ]
+              },
+              {
+                "id": "t810w3h0w",
+                "title": "Carousel Item 3",
+                "description": [
+                  {
+                    "children": [
+                      {
+                        "text": "Here is yet another rad carousel item"
+                      }
+                    ]
+                  }
+                ],
+                "imageUrl": "https://cm4-production-assets.s3.amazonaws.com/1664377501811-dalle-2022-09-27-20.37.28---a-lifeguard-tower-in-manhattan-beach-on-a-sunny-day-pixel-art.png",
+                "buttons": [
+                  {
+                    "id": "2619z3hzr",
+                    "name": "Go to admin",
+                    "intent": null
+                  },
+                  {
+                    "id": "3r2v13vu7",
+                    "name": "Go to your team",
+                    "intent": null
+                  },
+                  {
+                    "id": "z52w23vv3",
+                    "name": "Team Games",
+                    "intent": null
+                  }
+                ]
+              }
+            ],
+            "layout": "Carousel",
+            "portsV2": {
+              "byKey": {
+                "kzul3hwa": {
+                  "type": "",
+                  "target": "636b09206f146d83d38618b5",
+                  "id": "6340a828806073c10de81fc2",
+                  "data": {}
+                },
+                "msx83htr": {
+                  "type": "",
+                  "target": "636b08f76f146d83d38618ad",
+                  "id": "6340a828806073c10de81fc3",
+                  "data": {}
+                },
+                "2619z3hzr": {
+                  "type": "",
+                  "target": "6340a828806073c10de81fa0",
+                  "id": "6340a828806073c10de81fc5",
+                  "data": {}
+                },
+                "3r2v13vu7": {
+                  "id": "637164ababdcd7d472ceb3f3",
+                  "target": "637164b2abdcd7d472ceb3f6",
+                  "type": "",
+                  "data": {}
+                },
+                "z52w23vv3": {
+                  "id": "637164c1abdcd7d472ceb3fb",
+                  "target": "637164c9abdcd7d472ceb3fe",
+                  "type": "",
+                  "data": {}
+                }
+              },
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6340a828806073c10de81fc0"
+                },
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "6340a828806073c10de81fc1"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6340a828806073c10de81fbf"
+        },
+        "6340a828806073c10de81fcc": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "632ceb23c4ba34301bedde25",
+            "diagramID": "632b706dc53e91e383c10643",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "6340a828806073c10de81fcc"
+        },
+        "6340a828806073c10de81fcd": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "6371bef9df2d552cb844ec61",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "6340a828806073c10de81fcd"
+        },
+        "6342df587e725e77ad479a1e": {
+          "type": "markup_text",
+          "data": {
+            "scale": 1,
+            "rotate": 0,
+            "content": [
+              {
+                "textAlign": "center",
+                "children": [
+                  {
+                    "text": "TIPS"
+                  }
+                ]
+              },
+              {
+                "textAlign": "center",
+                "children": [
+                  {
+                    "text": "- Make sure to \"publish\" to production"
+                  }
+                ]
+              },
+              {
+                "textAlign": "center",
+                "children": [
+                  {
+                    "text": "- +/- keys to zoom in/out of canvas"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 384,
+            "backgroundColor": {
+              "r": 197,
+              "g": 231,
+              "b": 246,
+              "a": 1
+            },
+            "name": "Block"
+          },
+          "nodeID": "6342df587e725e77ad479a1e",
+          "coords": [
+            -793.5895695933326,
+            -516.5978509582051
+          ]
+        },
+        "6344d0757df32639fe7990da": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "ip15d3fhf",
+                "name": "Run some Javascript 💻",
+                "actions": []
+              },
+              {
+                "id": "ca1c33fqf",
+                "name": "Pick an image 🌠",
+                "actions": []
+              },
+              {
+                "id": "fp2pu3fmt",
+                "name": "Show a carousel 🎠",
+                "actions": []
+              },
+              {
+                "id": "8fem3glt",
+                "name": "Back to start 🔄",
+                "actions": []
+              }
+            ],
+            "intentScope": "GLOBAL",
+            "noMatch": {
+              "types": [
+                "reprompt"
+              ],
+              "pathName": "No match",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "id": "cl93kffct010x3b7hwehrqxmg",
+                  "content": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "6344d0757df32639fe7990dc"
+                }
+              },
+              "dynamic": [
+                {
+                  "id": "636afde36f146d83d3861841",
+                  "type": "",
+                  "target": "636afe126f146d83d3861844",
+                  "data": {}
+                },
+                {
+                  "id": "636afea46f146d83d3861859",
+                  "type": "",
+                  "target": "636afebd6f146d83d386185c",
+                  "data": {}
+                },
+                {
+                  "id": "636b08816f146d83d38618a4",
+                  "type": "",
+                  "target": "636b08a66f146d83d38618a7",
+                  "data": {}
+                },
+                {
+                  "id": "636bf544eb6e2dea8c23c3a7",
+                  "type": "",
+                  "target": "636bf548eb6e2dea8c23c3aa",
+                  "data": {}
+                }
+              ]
+            }
+          },
+          "nodeID": "6344d0757df32639fe7990da",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6344d0757df32639fe7990dd": {
+          "type": "block",
+          "data": {
+            "name": "Voiceflow Experiments",
+            "steps": [
+              "63716966abdcd7d472ceb430",
+              "636afe756f146d83d3861855",
+              "6344d0757df32639fe7990da"
+            ],
+            "color": ""
+          },
+          "nodeID": "6344d0757df32639fe7990dd",
+          "coords": [
+            771.7706570454509,
+            274.53145849357827
+          ]
+        },
+        "6363e4be1d756b050e05dda0": {
+          "type": "setV2",
+          "data": {
+            "name": "",
+            "sets": [
+              {
+                "type": "advance",
+                "variable": "hasVisited",
+                "expression": "true"
+              }
+            ],
+            "title": "Set visit variable",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6363e4be1d756b050e05dda1"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6363e4be1d756b050e05dda0"
+        },
+        "636afe126f146d83d3861843": {
+          "type": "code",
+          "data": {
+            "name": "",
+            "code": "randomValue = String(Math.random()).slice(3)\n",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "636bf5feeb6e2dea8c23c3c7",
+                  "id": "636afe126f146d83d3861845",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1086.1264403292225,
+                          1092.9961666123208
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1140.6550047823475,
+                          1092.7360347763833
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "636afe126f146d83d3861846"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "636afe126f146d83d3861843"
+        },
+        "636afe126f146d83d3861844": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "636afe126f146d83d3861843"
+            ]
+          },
+          "nodeID": "636afe126f146d83d3861844",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "636afe326f146d83d386184c": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "zg16l3fgl",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "The script result is "
+                      },
+                      {
+                        "id": "randomValue",
+                        "name": "randomValue",
+                        "type": "variable",
+                        "children": [
+                          {
+                            "text": ""
+                          }
+                        ]
+                      },
+                      {
+                        "text": " "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "636afe326f146d83d386184d"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "636afe326f146d83d386184c"
+        },
+        "636afe756f146d83d3861855": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "7t19t3fh3",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Below are some features from the voiceflow canvas"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "636afe756f146d83d3861856"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "636afe756f146d83d3861855"
+        },
+        "636afebd6f146d83d386185b": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "636b084c6f146d83d386189a",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "636afebd6f146d83d386185b"
+        },
+        "636afebd6f146d83d386185c": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "636afebd6f146d83d386185b"
+            ]
+          },
+          "nodeID": "636afebd6f146d83d386185c",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "636b084c6f146d83d3861897": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "8k2m23fvl",
+                "name": "Show Image #1",
+                "actions": []
+              },
+              {
+                "id": "v92o63fwn",
+                "name": "Show image #2",
+                "actions": []
+              },
+              {
+                "id": "tf2kx3vqm",
+                "name": "Randomize 🎲",
+                "actions": []
+              }
+            ],
+            "intentScope": "GLOBAL",
+            "noMatch": {
+              "types": [
+                "reprompt"
+              ],
+              "pathName": "No match",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "id": "cla8zn18k02m13b7fva9ff7n1",
+                  "content": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "636b084c6f146d83d3861899"
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "636b09f06f146d83d386195f",
+                  "id": "636b084c6f146d83d3861898",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1481.173071188597,
+                          681.2986568466958
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1602.3990233370346,
+                          681.2986568466958
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1602.3990233370346,
+                          436.3341793076333
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1723.624975485472,
+                          436.3341793076333
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "636b085d6f146d83d386189f",
+                  "type": "",
+                  "target": "636b09b56f146d83d38618d6",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1481.173071188597,
+                          735.7908443466958
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1603.585668844847,
+                          735.7908443466958
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1603.585668844847,
+                          935.8480953232583
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1725.998266501097,
+                          935.8480953232583
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "6371637aabdcd7d472ceb3a6",
+                  "type": "",
+                  "target": "637166a6abdcd7d472ceb420",
+                  "data": {}
+                }
+              ]
+            }
+          },
+          "nodeID": "636b084c6f146d83d3861897",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "636b084c6f146d83d386189a": {
+          "type": "block",
+          "data": {
+            "name": "Image Picker",
+            "steps": [
+              "636b084c6f146d83d3861897"
+            ],
+            "color": ""
+          },
+          "nodeID": "636b084c6f146d83d386189a",
+          "coords": [
+            1315.161484967527,
+            601.5754987425662
+          ]
+        },
+        "636b08a66f146d83d38618a6": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "6340a828806073c10de81f92",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "636b08a66f146d83d38618a6"
+        },
+        "636b08a66f146d83d38618a7": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "636b08a66f146d83d38618a6"
+            ]
+          },
+          "nodeID": "636b08a66f146d83d38618a7",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "636b08f76f146d83d38618ac": {
+          "type": "url",
+          "data": {
+            "name": "",
+            "url": "https://youtu.be/bH7sCxBptQE?t=18",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "636b08f76f146d83d38618ae"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "636b08f76f146d83d38618ac"
+        },
+        "636b08f76f146d83d38618ad": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "636b08f76f146d83d38618ac"
+            ]
+          },
+          "nodeID": "636b08f76f146d83d38618ad",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "636b09206f146d83d38618b4": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "636b09206f146d83d38618b4"
+        },
+        "636b09206f146d83d38618b5": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "636b09206f146d83d38618b4"
+            ]
+          },
+          "nodeID": "636b09206f146d83d38618b5",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "636b09b56f146d83d38618d6": {
+          "type": "block",
+          "data": {
+            "name": "dalle2",
+            "color": "",
+            "steps": [
+              "6340a828806073c10de81fa8",
+              "63716a2aabdcd7d472ceb454",
+              "636b09b56f146d83d38618e5"
+            ]
+          },
+          "nodeID": "636b09b56f146d83d38618d6",
+          "coords": [
+            1890.9981929751784,
+            908.8474424200758
+          ]
+        },
+        "636b09b56f146d83d38618d8": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "636b09b56f146d83d38618f1"
+            ]
+          },
+          "nodeID": "636b09b56f146d83d38618d8",
+          "coords": [
+            1269.0182785673003,
+            1758.0535800066095
+          ]
+        },
+        "636b09b56f146d83d38618da": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "636b09b56f146d83d38618ec"
+            ]
+          },
+          "nodeID": "636b09b56f146d83d38618da",
+          "coords": [
+            1269.0182785673003,
+            1758.0535800066095
+          ]
+        },
+        "636b09b56f146d83d38618dc": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "636b09b56f146d83d38618ee"
+            ]
+          },
+          "nodeID": "636b09b56f146d83d38618dc",
+          "coords": [
+            1269.0182785673003,
+            1758.0535800066095
+          ]
+        },
+        "636b09b56f146d83d38618de": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "636b09b56f146d83d38618f0"
+            ]
+          },
+          "nodeID": "636b09b56f146d83d38618de",
+          "coords": [
+            1269.0182785673003,
+            1758.0535800066095
+          ]
+        },
+        "636b09b56f146d83d38618e0": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "636b09b56f146d83d38618f2"
+            ]
+          },
+          "nodeID": "636b09b56f146d83d38618e0",
+          "coords": [
+            -130.6124758696701,
+            801.1762260314858
+          ]
+        },
+        "636b09b56f146d83d38618e5": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "bte63q4u",
+                "name": "Back to start 🔄",
+                "actions": []
+              }
+            ],
+            "intentScope": "GLOBAL",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": "636b09b56f146d83d38618d8",
+                  "id": "636b09b56f146d83d38618e6",
+                  "data": {}
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "636b09b56f146d83d38618e0",
+                  "id": "636b09b56f146d83d38618ea",
+                  "data": {}
+                }
+              ]
+            }
+          },
+          "nodeID": "636b09b56f146d83d38618e5"
+        },
+        "636b09b56f146d83d38618ec": {
+          "type": "url",
+          "data": {
+            "name": "",
+            "url": "https://miro.com",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "636b09b56f146d83d38618eb"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "636b09b56f146d83d38618ec"
+        },
+        "636b09b56f146d83d38618ee": {
+          "type": "url",
+          "data": {
+            "name": "",
+            "url": "https://github.com",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "636b09b56f146d83d38618ed"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "636b09b56f146d83d38618ee"
+        },
+        "636b09b56f146d83d38618f0": {
+          "type": "url",
+          "data": {
+            "name": "",
+            "url": "https://pastebin.com/ngK0EWnB",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "636b09b56f146d83d38618ef"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "636b09b56f146d83d38618f0"
+        },
+        "636b09b56f146d83d38618f1": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "632b706dc53e91e383c10643",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "636b09b56f146d83d38618f1"
+        },
+        "636b09b56f146d83d38618f2": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "636b09b56f146d83d38618f2"
+        },
+        "636b09f06f146d83d386195f": {
+          "type": "block",
+          "data": {
+            "name": "dalle1",
+            "color": "",
+            "steps": [
+              "6340a828806073c10de81fa2",
+              "6340a828806073c10de81fa5",
+              "636b09f06f146d83d386196b"
+            ]
+          },
+          "nodeID": "636b09f06f146d83d386195f",
+          "coords": [
+            1888.6251479223638,
+            409.33370342319336
+          ]
+        },
+        "636b09f06f146d83d3861961": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "636b09f06f146d83d386196e"
+            ]
+          },
+          "nodeID": "636b09f06f146d83d3861961",
+          "coords": [
+            1036.5182785673003,
+            1748.0535800066095
+          ]
+        },
+        "636b09f06f146d83d3861963": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "636b09f06f146d83d386196f"
+            ]
+          },
+          "nodeID": "636b09f06f146d83d3861963",
+          "coords": [
+            -363.1124758696701,
+            791.1762260314858
+          ]
+        },
+        "636b09f06f146d83d386196b": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "bte63q4u",
+                "name": "Back to start 🔄",
+                "actions": []
+              }
+            ],
+            "intentScope": "GLOBAL",
+            "noMatch": null,
+            "noReply": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": "636b09f06f146d83d3861961",
+                  "id": "636b09f06f146d83d386196c",
+                  "data": {}
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "636b09f06f146d83d3861963",
+                  "id": "636b09f06f146d83d386196d",
+                  "data": {}
+                }
+              ]
+            }
+          },
+          "nodeID": "636b09f06f146d83d386196b"
+        },
+        "636b09f06f146d83d386196e": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "632b706dc53e91e383c10643",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "636b09f06f146d83d386196e"
+        },
+        "636b09f06f146d83d386196f": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "636b09f06f146d83d386196f"
+        },
+        "636bf548eb6e2dea8c23c3a9": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "636bf548eb6e2dea8c23c3a9"
+        },
+        "636bf548eb6e2dea8c23c3aa": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "636bf548eb6e2dea8c23c3a9"
+            ]
+          },
+          "nodeID": "636bf548eb6e2dea8c23c3aa",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "636bf5beeb6e2dea8c23c3b0": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "9iks3gai",
+                "name": "Back to start 🔄",
+                "actions": []
+              }
+            ],
+            "intentScope": "GLOBAL",
+            "noMatch": {
+              "types": [
+                "reprompt",
+                "path"
+              ],
+              "pathName": "No match",
+              "randomize": true,
+              "reprompts": [
+                {
+                  "id": "cla9ztw9i00kr3b7gllwfva1z",
+                  "content": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": "636bf5f3eb6e2dea8c23c3c1",
+                  "id": "636bf5beeb6e2dea8c23c3b2",
+                  "data": {}
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "636bf5e1eb6e2dea8c23c3ba",
+                  "id": "636bf5beeb6e2dea8c23c3b1",
+                  "data": {}
+                }
+              ]
+            }
+          },
+          "nodeID": "636bf5beeb6e2dea8c23c3b0"
+        },
+        "636bf5beeb6e2dea8c23c3b3": {
+          "type": "block",
+          "data": {
+            "name": "Re-usable Button Block",
+            "steps": [
+              "636bf5beeb6e2dea8c23c3b0"
+            ],
+            "color": ""
+          },
+          "nodeID": "636bf5beeb6e2dea8c23c3b3",
+          "coords": [
+            231.15936254239506,
+            360.1482819554254
+          ]
+        },
+        "636bf5e1eb6e2dea8c23c3b9": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "636bf5e1eb6e2dea8c23c3b9"
+        },
+        "636bf5e1eb6e2dea8c23c3ba": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "636bf5e1eb6e2dea8c23c3b9"
+            ]
+          },
+          "nodeID": "636bf5e1eb6e2dea8c23c3ba",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "636bf5f3eb6e2dea8c23c3c0": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "636bf5f3eb6e2dea8c23c3c0"
+        },
+        "636bf5f3eb6e2dea8c23c3c1": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "636bf5f3eb6e2dea8c23c3c0"
+            ]
+          },
+          "nodeID": "636bf5f3eb6e2dea8c23c3c1",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "636bf5feeb6e2dea8c23c3c7": {
+          "type": "block",
+          "data": {
+            "name": "JS Result",
+            "color": "",
+            "steps": [
+              "636afe326f146d83d386184c",
+              "636bf5feeb6e2dea8c23c3cd"
+            ]
+          },
+          "nodeID": "636bf5feeb6e2dea8c23c3c7",
+          "coords": [
+            1305.654632897041,
+            1065.7360222178656
+          ]
+        },
+        "636bf5feeb6e2dea8c23c3c9": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "636bf5feeb6e2dea8c23c3d1"
+            ]
+          },
+          "nodeID": "636bf5feeb6e2dea8c23c3c9",
+          "coords": [
+            1694.3749999999998,
+            341.9748305489344
+          ]
+        },
+        "636bf5feeb6e2dea8c23c3cb": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "636bf5feeb6e2dea8c23c3d3"
+            ]
+          },
+          "nodeID": "636bf5feeb6e2dea8c23c3cb",
+          "coords": [
+            1694.3749999999998,
+            341.9748305489344
+          ]
+        },
+        "636bf5feeb6e2dea8c23c3cd": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "9iks3gai",
+                "name": "Back to start 🔄",
+                "actions": []
+              }
+            ],
+            "intentScope": "GLOBAL",
+            "noMatch": {
+              "types": [
+                "reprompt",
+                "path"
+              ],
+              "pathName": "No match",
+              "randomize": true,
+              "reprompts": [
+                {
+                  "id": "cla9ztw9i00kr3b7gllwfva1z",
+                  "content": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "noReply": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": "636bf5feeb6e2dea8c23c3c9",
+                  "id": "636bf5feeb6e2dea8c23c3ce"
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "636bf5feeb6e2dea8c23c3cb",
+                  "id": "636bf5feeb6e2dea8c23c3cf"
+                }
+              ]
+            }
+          },
+          "nodeID": "636bf5feeb6e2dea8c23c3cd"
+        },
+        "636bf5feeb6e2dea8c23c3d1": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "636bf5feeb6e2dea8c23c3d1"
+        },
+        "636bf5feeb6e2dea8c23c3d3": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "636bf5feeb6e2dea8c23c3d3"
+        },
+        "637110dd6ae15632ace6cf22": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "637110dd6ae15632ace6cf22"
+        },
+        "637110dd6ae15632ace6cf23": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "637110dd6ae15632ace6cf22"
+            ]
+          },
+          "nodeID": "637110dd6ae15632ace6cf23",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "637115b46ae15632ace6cf28": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "637115b46ae15632ace6cf28"
+        },
+        "637115b46ae15632ace6cf29": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "637115b46ae15632ace6cf28"
+            ]
+          },
+          "nodeID": "637115b46ae15632ace6cf29",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "63716394abdcd7d472ceb3a8": {
+          "type": "visual",
+          "data": {
+            "name": "Visuals",
+            "image": "https://cm4-production-assets.s3.amazonaws.com/1668375452135-dalle-2022-11-13-13.36.18---a-lifeguard-tower-on-the-beach-in-manhattan-beach-california-in-pixel-art.png",
+            "visualType": "image",
+            "canvasVisibility": "full",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "63717781edd1d530e923b501",
+                  "id": "63716394abdcd7d472ceb3a9",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          493.9678893679536,
+                          2023.0899064248435
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1229.5528503054536,
+                          2023.0899064248435
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1229.5528503054536,
+                          2128.517292027522
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1965.1378112429536,
+                          2128.517292027522
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "dimensions": {
+              "width": 1024,
+              "height": 1024
+            },
+            "frameType": "AUTO"
+          },
+          "nodeID": "63716394abdcd7d472ceb3a8"
+        },
+        "63716394abdcd7d472ceb3aa": {
+          "type": "block",
+          "data": {
+            "name": "Tower variant",
+            "steps": [
+              "63716394abdcd7d472ceb3a8"
+            ],
+            "color": ""
+          },
+          "nodeID": "63716394abdcd7d472ceb3aa",
+          "coords": [
+            327.95594037330966,
+            1687.6111925554414
+          ]
+        },
+        "637163a1abdcd7d472ceb3b1": {
+          "type": "visual",
+          "data": {
+            "name": "Visuals",
+            "image": "https://cm4-production-assets.s3.amazonaws.com/1668375463325-dalle-2022-11-13-13.36.15---a-lifeguard-tower-on-the-beach-in-manhattan-beach-california-in-pixel-art.png",
+            "visualType": "image",
+            "canvasVisibility": "full",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "63717781edd1d530e923b501",
+                  "id": "637163a1abdcd7d472ceb3b2",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1201.7866672697394,
+                          1965.748249058772
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1583.4622392563465,
+                          1965.748249058772
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1583.4622392563465,
+                          2128.517292027522
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1965.1378112429536,
+                          2128.517292027522
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "dimensions": {
+              "width": 1024,
+              "height": 1024
+            },
+            "frameType": "AUTO"
+          },
+          "nodeID": "637163a1abdcd7d472ceb3b1"
+        },
+        "637163a1abdcd7d472ceb3b3": {
+          "type": "block",
+          "data": {
+            "name": "Tower variant",
+            "steps": [
+              "637163a1abdcd7d472ceb3b1"
+            ],
+            "color": ""
+          },
+          "nodeID": "637163a1abdcd7d472ceb3b3",
+          "coords": [
+            1035.7744061364901,
+            1630.269501549139
+          ]
+        },
+        "637163aeabdcd7d472ceb3ba": {
+          "type": "visual",
+          "data": {
+            "name": "Visuals",
+            "image": "https://cm4-production-assets.s3.amazonaws.com/1668375474499-dalle-2022-11-13-13.36.12---a-lifeguard-tower-on-the-beach-in-manhattan-beach-california-in-pixel-art.png",
+            "visualType": "image",
+            "canvasVisibility": "full",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "63717781edd1d530e923b4fd",
+                  "id": "637163aeabdcd7d472ceb3bb",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1977.5518039884894,
+                          1798.824944092254
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": true,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1940.1258134750965,
+                          1798.824944092254
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1940.1258134750965,
+                          2180.9937498958257
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1964.1258134750965,
+                          2180.9937498958257
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "dimensions": {
+              "width": 1024,
+              "height": 1024
+            },
+            "frameType": "AUTO"
+          },
+          "nodeID": "637163aeabdcd7d472ceb3ba"
+        },
+        "637163aeabdcd7d472ceb3bc": {
+          "type": "block",
+          "data": {
+            "name": "Tower variant",
+            "steps": [
+              "637163aeabdcd7d472ceb3ba"
+            ],
+            "color": ""
+          },
+          "nodeID": "637163aeabdcd7d472ceb3bc",
+          "coords": [
+            2143.562867674955,
+            1463.3464246260596
+          ]
+        },
+        "637163b6abdcd7d472ceb3c3": {
+          "type": "visual",
+          "data": {
+            "name": "Visuals",
+            "image": "https://cm4-production-assets.s3.amazonaws.com/1668375485457-dalle-2022-11-13-13.36.09---show-a-lifeguard-tower-on-the-sand-in-el-porto-in-manhattan-beach-ca-on-a-beautiful-sunny-day.png",
+            "visualType": "image",
+            "canvasVisibility": "full",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "63717781edd1d530e923b4fd",
+                  "id": "637163b6abdcd7d472ceb3c4",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1916.113187917061,
+                          1798.7290317038612
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1940.1195006960788,
+                          1798.7290317038612
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1940.1195006960788,
+                          2180.9937498958257
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1964.1258134750965,
+                          2180.9937498958257
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "dimensions": {
+              "width": 1024,
+              "height": 1024
+            },
+            "frameType": "AUTO"
+          },
+          "nodeID": "637163b6abdcd7d472ceb3c3"
+        },
+        "637163b6abdcd7d472ceb3c5": {
+          "type": "block",
+          "data": {
+            "name": "Tower variant",
+            "steps": [
+              "637163b6abdcd7d472ceb3c3"
+            ],
+            "color": ""
+          },
+          "nodeID": "637163b6abdcd7d472ceb3c5",
+          "coords": [
+            1750.1013292134185,
+            1463.250270779909
+          ]
+        },
+        "637163c2abdcd7d472ceb3cc": {
+          "type": "visual",
+          "data": {
+            "name": "Visuals",
+            "image": "https://cm4-production-assets.s3.amazonaws.com/1668375496991-dalle-2022-11-13-13.36.05---a-sketch-of-a-lifeguard-tower-on-the-beach-in-manhattan-beach-california.png",
+            "visualType": "image",
+            "canvasVisibility": "full",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "63717781edd1d530e923b501",
+                  "id": "637163c2abdcd7d472ceb3cd",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1561.1135366893823,
+                          1857.5751184784149
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1763.125673966168,
+                          1857.5751184784149
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1763.125673966168,
+                          2128.517292027522
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1965.1378112429536,
+                          2128.517292027522
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "dimensions": {
+              "width": 1024,
+              "height": 1024
+            },
+            "frameType": "AUTO"
+          },
+          "nodeID": "637163c2abdcd7d472ceb3cc"
+        },
+        "637163cbabdcd7d472ceb3d3": {
+          "type": "block",
+          "data": {
+            "name": "Tower variant",
+            "steps": [
+              "637163c2abdcd7d472ceb3cc"
+            ],
+            "color": ""
+          },
+          "nodeID": "637163cbabdcd7d472ceb3d3",
+          "coords": [
+            1395.1013292134155,
+            1522.09642462606
+          ]
+        },
+        "637163cfabdcd7d472ceb3dc": {
+          "type": "visual",
+          "data": {
+            "name": "Visuals",
+            "image": "https://cm4-production-assets.s3.amazonaws.com/1668375509202-dalle-2022-11-13-13.36.00---show-a-lifeguard-tower-on-the-sand-in-el-porto-in-manhattan-beach-ca-on-a-beautiful-sunny-day.png",
+            "visualType": "image",
+            "canvasVisibility": "full",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "63717781edd1d530e923b501",
+                  "id": "637163cfabdcd7d472ceb3dd",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          850.2649736313465,
+                          2023.6538712685935
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1407.70139243715,
+                          2023.6538712685935
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1407.70139243715,
+                          2128.517292027522
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1965.1378112429536,
+                          2128.517292027522
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "dimensions": {
+              "width": 1024,
+              "height": 1024
+            },
+            "frameType": "AUTO"
+          },
+          "nodeID": "637163cfabdcd7d472ceb3dc"
+        },
+        "637163cfabdcd7d472ceb3de": {
+          "type": "block",
+          "data": {
+            "name": "Tower variant",
+            "steps": [
+              "637163cfabdcd7d472ceb3dc"
+            ],
+            "color": ""
+          },
+          "nodeID": "637163cfabdcd7d472ceb3de",
+          "coords": [
+            684.2528993738642,
+            1688.175286707908
+          ]
+        },
+        "637164b2abdcd7d472ceb3f5": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "6371be4adf2d552cb844ec19",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "637164b2abdcd7d472ceb3f5"
+        },
+        "637164b2abdcd7d472ceb3f6": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "637164b2abdcd7d472ceb3f5"
+            ]
+          },
+          "nodeID": "637164b2abdcd7d472ceb3f6",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "637164c9abdcd7d472ceb3fd": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "6371bb25df2d552cb844e0cd",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "637164c9abdcd7d472ceb3fd"
+        },
+        "637164c9abdcd7d472ceb3fe": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "637164c9abdcd7d472ceb3fd"
+            ]
+          },
+          "nodeID": "637164c9abdcd7d472ceb3fe",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "63716649abdcd7d472ceb403": {
+          "type": "randomV2",
+          "data": {
+            "name": "Random",
+            "namedPaths": [
+              {
+                "label": "Path 1"
+              },
+              {
+                "label": "Path 2"
+              },
+              {
+                "label": "Path 3"
+              },
+              {
+                "label": "Path 4"
+              },
+              {
+                "label": "Path 5"
+              },
+              {
+                "label": "Path 6"
+              },
+              {
+                "label": "Path 7"
+              },
+              {
+                "label": "Path 8"
+              }
+            ],
+            "noDuplicates": false,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "637163aeabdcd7d472ceb3bc",
+                  "id": "63716649abdcd7d472ceb404",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -584.2035845438768,
+                          1492.767095843091
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1978.5631042117036,
+                          1490.346428467254
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "",
+                  "target": "637163b6abdcd7d472ceb3c3",
+                  "id": "63716649abdcd7d472ceb405",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -584.2035845438768,
+                          1547.259283343091
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1584.0898899259894,
+                          1542.7269739471649
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "63716670abdcd7d472ceb40f",
+                  "type": "",
+                  "target": "637163c2abdcd7d472ceb3cc",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -584.2035845438768,
+                          1601.751470843091
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1229.0898899259894,
+                          1601.5730607217183
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "6371667aabdcd7d472ceb412",
+                  "type": "",
+                  "target": "637163a1abdcd7d472ceb3b3",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -584.2035845438768,
+                          1656.243658343091
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          870.7750182742036,
+                          1657.269733433772
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "63716685abdcd7d472ceb419",
+                  "type": "",
+                  "target": "637163cfabdcd7d472ceb3de",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -584.2035845438768,
+                          1710.735845843091
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          519.2534990219715,
+                          1715.1753556435933
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "63716694abdcd7d472ceb41c",
+                  "type": "",
+                  "target": "63716394abdcd7d472ceb3a8",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -584.2035845438768,
+                          1765.228033343091
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          161.94476576304288,
+                          1767.0880230543078
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "63716b5aabdcd7d472ceb47c",
+                  "type": "",
+                  "target": "63716a41abdcd7d472ceb468",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -584.2035845438768,
+                          1819.720220843091
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -196.4410810561536,
+                          1823.104694371272
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "6371c0a6df2d552cb844ec9e",
+                  "type": "",
+                  "target": "6340a828806073c10de81fab",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -584.2035845438768,
+                          1874.212408343091
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -562.7860691978947,
+                          1877.7733606659149
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "63716649abdcd7d472ceb403"
+        },
+        "63716649abdcd7d472ceb406": {
+          "type": "block",
+          "data": {
+            "name": "Randomizer",
+            "steps": [
+              "63716649abdcd7d472ceb403"
+            ],
+            "color": ""
+          },
+          "nodeID": "63716649abdcd7d472ceb406",
+          "coords": [
+            -750.2157669237988,
+            1413.0442064065219
+          ]
+        },
+        "637166a6abdcd7d472ceb41f": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "63716649abdcd7d472ceb406",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "637166a6abdcd7d472ceb41f"
+        },
+        "637166a6abdcd7d472ceb420": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "637166a6abdcd7d472ceb41f"
+            ]
+          },
+          "nodeID": "637166a6abdcd7d472ceb420",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "63716966abdcd7d472ceb430": {
+          "type": "visual",
+          "data": {
+            "name": "Visuals",
+            "image": "https://cm4-production-assets.s3.amazonaws.com/1668375474499-dalle-2022-11-13-13.36.12---a-lifeguard-tower-on-the-beach-in-manhattan-beach-california-in-pixel-art.png",
+            "device": null,
+            "dimensions": {
+              "width": 1024,
+              "height": 1024
+            },
+            "visualType": "image",
+            "canvasVisibility": "full",
+            "frameType": "AUTO",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "63716966abdcd7d472ceb431"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "63716966abdcd7d472ceb430"
+        },
+        "63716a2aabdcd7d472ceb454": {
+          "type": "visual",
+          "data": {
+            "name": "Visuals",
+            "image": "https://cm4-production-assets.s3.amazonaws.com/1668377134565-dalle-2022-11-13-14.04.47---a-lifeguard-tower-on-the-beach-in-manhattan-beach-california-in-pixel-art-at-night-moon-dolphins-swimming.png",
+            "visualType": "image",
+            "canvasVisibility": "full",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "63716a2aabdcd7d472ceb455"
+                }
+              },
+              "dynamic": []
+            },
+            "dimensions": {
+              "width": 1024,
+              "height": 1024
+            },
+            "frameType": "AUTO"
+          },
+          "nodeID": "63716a2aabdcd7d472ceb454"
+        },
+        "63716a41abdcd7d472ceb466": {
+          "type": "visual",
+          "data": {
+            "name": "Visuals",
+            "image": "https://cm4-production-assets.s3.amazonaws.com/1668377158965-dalle-2022-11-13-14.03.58---a-lifeguard-tower-on-the-beach-in-manhattan-beach-california-in-pixel-art-at-night.png",
+            "visualType": "image",
+            "canvasVisibility": "full",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "63717781edd1d530e923b501",
+                  "id": "63716a41abdcd7d472ceb467",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          134.57056793938216,
+                          2131.583209996272
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          1965.1378112429536,
+                          2128.517292027522
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "dimensions": {
+              "width": 1024,
+              "height": 1024
+            },
+            "frameType": "AUTO"
+          },
+          "nodeID": "63716a41abdcd7d472ceb466"
+        },
+        "63716a41abdcd7d472ceb468": {
+          "type": "block",
+          "data": {
+            "name": "Tower variant",
+            "steps": [
+              "63716a41abdcd7d472ceb466"
+            ],
+            "color": ""
+          },
+          "nodeID": "63716a41abdcd7d472ceb468",
+          "coords": [
+            -31.441408861491386,
+            1796.104606361464
+          ]
+        },
+        "63717781edd1d530e923b4f9": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "63717781edd1d530e923b502"
+            ]
+          },
+          "nodeID": "63717781edd1d530e923b4f9",
+          "coords": [
+            2570.0330972710317,
+            2248.9329965328943
+          ]
+        },
+        "63717781edd1d530e923b4fb": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "63717781edd1d530e923b503"
+            ]
+          },
+          "nodeID": "63717781edd1d530e923b4fb",
+          "coords": [
+            2570.0330972710317,
+            2248.9329965328943
+          ]
+        },
+        "63717781edd1d530e923b4fd": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "9iks3gai",
+                "name": "Back to start 🔄",
+                "actions": []
+              }
+            ],
+            "intentScope": "GLOBAL",
+            "noMatch": {
+              "types": [
+                "reprompt",
+                "path"
+              ],
+              "pathName": "No match",
+              "randomize": true,
+              "reprompts": [
+                {
+                  "id": "cla9ztw9i00kr3b7gllwfva1z",
+                  "content": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "noReply": null,
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": "63717781edd1d530e923b4f9",
+                  "id": "63717781edd1d530e923b4fe",
+                  "data": {}
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "63717781edd1d530e923b4fb",
+                  "id": "63717781edd1d530e923b4ff",
+                  "data": {}
+                }
+              ]
+            }
+          },
+          "nodeID": "63717781edd1d530e923b4fd"
+        },
+        "63717781edd1d530e923b501": {
+          "type": "block",
+          "data": {
+            "name": "Re-usable Button Block copy",
+            "color": "",
+            "steps": [
+              "63717781edd1d530e923b4fd"
+            ]
+          },
+          "nodeID": "63717781edd1d530e923b501",
+          "coords": [
+            2130.1375147584777,
+            2101.517375190042
+          ]
+        },
+        "63717781edd1d530e923b502": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "63717781edd1d530e923b502"
+        },
+        "63717781edd1d530e923b503": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "63717781edd1d530e923b503"
+        },
+        "6371aaf00f2927d36dfc35ad": {
+          "type": "block",
+          "data": {
+            "name": "Entry point",
+            "steps": [
+              "6363e4be1d756b050e05dda0",
+              "6371ab750f2927d36dfc35f0"
+            ],
+            "color": ""
+          },
+          "nodeID": "6371aaf00f2927d36dfc35ad",
+          "coords": [
+            227.35017777341983,
+            -176.57027451491132
+          ]
+        },
+        "6371ab210f2927d36dfc35da": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "7vpu3x3f",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Hi I'm CultureBot, a one-bot-stop to get you what you need"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "532vb3xuv",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "CultureBot here, how can I help?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "weej3g1r",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "CultureBot ready to help you & your team"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "6371aaf00f2927d36dfc35ad",
+                  "id": "6371ab210f2927d36dfc35db",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -58.237910279785325,
+                          -6.20154353068839
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          2.0561799912107475,
+                          -6.20154353068839
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          2.0561799912107475,
+                          -149.5703675358153
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          62.35027026220682,
+                          -149.5703675358153
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371ab210f2927d36dfc35da"
+        },
+        "6371aaf00f2927d36dfc35aa": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "mona3x2y",
+                "name": "Admin",
+                "actions": [],
+                "intent": "8q21i3vhy"
+              },
+              {
+                "id": "r2qx3xtr",
+                "name": "Admin",
+                "actions": []
+              },
+              {
+                "id": "iars3x0r",
+                "name": "g",
+                "actions": []
+              }
+            ],
+            "intentScope": "GLOBAL",
+            "noMatch": {
+              "types": [
+                "reprompt",
+                "path"
+              ],
+              "pathName": "No match",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "id": "clag6jfmo00n93b7x29hcim4o",
+                  "content": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": "6371ab1c0f2927d36dfc35d5",
+                  "id": "6371aaf00f2927d36dfc35ac"
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "6371ab580f2927d36dfc35e5",
+                  "id": "6371aaf00f2927d36dfc35ab"
+                },
+                {
+                  "type": "",
+                  "target": null,
+                  "id": "6371ab2e0f2927d36dfc35de"
+                },
+                {
+                  "type": "",
+                  "target": null,
+                  "id": "6371ab440f2927d36dfc35e2"
+                }
+              ]
+            }
+          },
+          "nodeID": "6371aaf00f2927d36dfc35aa"
+        },
+        "6371ab1c0f2927d36dfc35d4": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371ab1c0f2927d36dfc35d4"
+        },
+        "6371ab1c0f2927d36dfc35d5": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "6371ab1c0f2927d36dfc35d4"
+            ]
+          },
+          "nodeID": "6371ab1c0f2927d36dfc35d5",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371ab580f2927d36dfc35e4": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "63409a42806073c10de81beb",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371ab580f2927d36dfc35e4"
+        },
+        "6371ab580f2927d36dfc35e5": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "6371ab580f2927d36dfc35e4"
+            ]
+          },
+          "nodeID": "6371ab580f2927d36dfc35e5",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371ab750f2927d36dfc35f0": {
+          "type": "buttons",
+          "data": {
+            "name": "Buttons",
+            "buttons": [
+              {
+                "id": "jawr3xdv",
+                "name": "My team 🚀",
+                "actions": [],
+                "intent": "lk30e3rvo"
+              },
+              {
+                "id": "pex13x3s",
+                "name": "Admin 📊",
+                "actions": [],
+                "intent": "8q21i3vhy"
+              },
+              {
+                "id": "pkxb3x96",
+                "name": "Team Games 🎮",
+                "actions": [],
+                "intent": "gm1f13v5o"
+              },
+              {
+                "id": "hgxm3x07",
+                "name": "Experiments Lab 🔬",
+                "actions": [],
+                "intent": "ua2d23vtp"
+              }
+            ],
+            "intentScope": "GLOBAL",
+            "noMatch": {
+              "types": [
+                "reprompt"
+              ],
+              "pathName": "No match",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "id": "clag6maja00wq3b7x7wwomfcp",
+                  "content": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "6371ab750f2927d36dfc35f2"
+                }
+              },
+              "dynamic": [
+                {
+                  "type": "",
+                  "target": "6371ab8b0f2927d36dfc35fd",
+                  "id": "6371ab750f2927d36dfc35f1",
+                  "data": {}
+                },
+                {
+                  "id": "6371ab770f2927d36dfc35f5",
+                  "type": "",
+                  "target": "6371ab990f2927d36dfc3603",
+                  "data": {}
+                },
+                {
+                  "id": "6371ab7a0f2927d36dfc35f8",
+                  "type": "",
+                  "target": "6371aba60f2927d36dfc3609",
+                  "data": {}
+                },
+                {
+                  "id": "6371ab7c0f2927d36dfc35fa",
+                  "type": "",
+                  "target": "6371abb30f2927d36dfc360f",
+                  "data": {}
+                }
+              ]
+            }
+          },
+          "nodeID": "6371ab750f2927d36dfc35f0",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371ab8b0f2927d36dfc35fc": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "6371be4adf2d552cb844ec19",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371ab8b0f2927d36dfc35fc"
+        },
+        "6371ab8b0f2927d36dfc35fd": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "6371ab8b0f2927d36dfc35fc"
+            ]
+          },
+          "nodeID": "6371ab8b0f2927d36dfc35fd",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371ab990f2927d36dfc3602": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "6371bef9df2d552cb844ec61",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371ab990f2927d36dfc3602"
+        },
+        "6371ab990f2927d36dfc3603": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "6371ab990f2927d36dfc3602"
+            ]
+          },
+          "nodeID": "6371ab990f2927d36dfc3603",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371aba60f2927d36dfc3608": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "6371bb25df2d552cb844e0cd",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371aba60f2927d36dfc3608"
+        },
+        "6371aba60f2927d36dfc3609": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "6371aba60f2927d36dfc3608"
+            ]
+          },
+          "nodeID": "6371aba60f2927d36dfc3609",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371abb30f2927d36dfc360e": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "6344d0757df32639fe7990dd",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371abb30f2927d36dfc360e"
+        },
+        "6371abb30f2927d36dfc360f": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "6371abb30f2927d36dfc360e"
+            ]
+          },
+          "nodeID": "6371abb30f2927d36dfc360f",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371bb25df2d552cb844e0ca": {
+          "type": "cardV2",
+          "data": {
+            "name": "Card",
+            "title": "Alright here are some team-friendly games!",
+            "buttons": [
+              {
+                "id": "s22cz3gao",
+                "name": "Tetris",
+                "intent": null
+              },
+              {
+                "id": "5n2ed3g8r",
+                "name": "Codenames",
+                "intent": null
+              },
+              {
+                "id": "3p2hz3gay",
+                "name": "Back to start 🔄",
+                "intent": null
+              }
+            ],
+            "imageUrl": "https://cm4-production-assets.s3.amazonaws.com/1668398361051-minify.png",
+            "description": [
+              {
+                "children": [
+                  {
+                    "text": "Pick one of the options on the list-- handy for onboarding or as a quick way to get everyone together"
+                  }
+                ]
+              }
+            ],
+            "portsV2": {
+              "byKey": {
+                "s22cz3gao": {
+                  "id": "6371bb4adf2d552cb844e0f2",
+                  "target": "6371bb5ddf2d552cb844e0f5",
+                  "type": "",
+                  "data": {}
+                },
+                "5n2ed3g8r": {
+                  "id": "6371bb92df2d552cb844e0fc",
+                  "target": "6371bb97df2d552cb844e0ff",
+                  "type": "",
+                  "data": {}
+                },
+                "3p2hz3gay": {
+                  "id": "6371bbd8df2d552cb844e10d",
+                  "target": "6371bbe1df2d552cb844e110",
+                  "type": "",
+                  "data": {}
+                }
+              },
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "6371bb25df2d552cb844e0cc"
+                },
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6371bb25df2d552cb844e0cb"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371bb25df2d552cb844e0ca"
+        },
+        "6371bb25df2d552cb844e0cd": {
+          "type": "block",
+          "data": {
+            "name": "Games",
+            "steps": [
+              "6371bb25df2d552cb844e0ca"
+            ],
+            "color": "#56b365"
+          },
+          "nodeID": "6371bb25df2d552cb844e0cd",
+          "coords": [
+            769.3324959527761,
+            -328.18541444569246
+          ]
+        },
+        "6371bb5ddf2d552cb844e0f4": {
+          "type": "url",
+          "data": {
+            "name": "",
+            "url": "https://jstris.jezevec10.com/",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6371bb5ddf2d552cb844e0f6"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371bb5ddf2d552cb844e0f4"
+        },
+        "6371bb5ddf2d552cb844e0f5": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "6371bb5ddf2d552cb844e0f4"
+            ]
+          },
+          "nodeID": "6371bb5ddf2d552cb844e0f5",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371bb97df2d552cb844e0fe": {
+          "type": "url",
+          "data": {
+            "name": "",
+            "url": "https://codenames.game/",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6371bb97df2d552cb844e100"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371bb97df2d552cb844e0fe"
+        },
+        "6371bb97df2d552cb844e0ff": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "6371bb97df2d552cb844e0fe"
+            ]
+          },
+          "nodeID": "6371bb97df2d552cb844e0ff",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371bbaedf2d552cb844e106": {
+          "type": "block",
+          "data": {
+            "name": "Tower variant",
+            "steps": [
+              "6340a828806073c10de81fab"
+            ],
+            "color": ""
+          },
+          "nodeID": "6371bbaedf2d552cb844e106",
+          "coords": [
+            -396.7746469043657,
+            1798.2965052962372
+          ]
+        },
+        "6371bbe1df2d552cb844e10f": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371bbe1df2d552cb844e10f"
+        },
+        "6371bbe1df2d552cb844e110": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "6371bbe1df2d552cb844e10f"
+            ]
+          },
+          "nodeID": "6371bbe1df2d552cb844e110",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371be4adf2d552cb844ec16": {
+          "type": "cardV2",
+          "data": {
+            "name": "Card",
+            "title": "Here are some handy links just for our team",
+            "buttons": [
+              {
+                "id": "1x4m93gsq",
+                "name": "Team Spotify Playlist 🎷",
+                "intent": null
+              },
+              {
+                "id": "rx4ni3g6z",
+                "name": "Weekly Check-in 💬",
+                "intent": null
+              },
+              {
+                "id": "pb4ox3grk",
+                "name": "Back to start 🔄",
+                "intent": null
+              }
+            ],
+            "imageUrl": "https://cm4-production-assets.s3.amazonaws.com/1668398745907-minify.png",
+            "description": [
+              {
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "noMatch": null,
+            "noReply": null,
+            "portsV2": {
+              "byKey": {
+                "1x4m93gsq": {
+                  "type": "",
+                  "target": "6371be63df2d552cb844ec21",
+                  "id": "6371be60df2d552cb844ec1e"
+                },
+                "rx4ni3g6z": {
+                  "type": "",
+                  "target": "6371be71df2d552cb844ec2b",
+                  "id": "6371be6ddf2d552cb844ec28"
+                },
+                "pb4ox3grk": {
+                  "type": "",
+                  "target": "6371be7cdf2d552cb844ec35",
+                  "id": "6371be79df2d552cb844ec32"
+                }
+              },
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "6371be4adf2d552cb844ec18"
+                },
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6371be4adf2d552cb844ec17"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371be4adf2d552cb844ec16"
+        },
+        "6371be4adf2d552cb844ec19": {
+          "type": "block",
+          "data": {
+            "name": "Team",
+            "color": "",
+            "steps": [
+              "6371be4adf2d552cb844ec16"
+            ]
+          },
+          "nodeID": "6371be4adf2d552cb844ec19",
+          "coords": [
+            776.0716063448485,
+            -21.277417372054174
+          ]
+        },
+        "6371be63df2d552cb844ec20": {
+          "type": "url",
+          "data": {
+            "name": "",
+            "url": "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M?si=V2SBvVUBQk-uQFK0B4_m-g&nd=1",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6371be63df2d552cb844ec22"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371be63df2d552cb844ec20"
+        },
+        "6371be63df2d552cb844ec21": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "6371be63df2d552cb844ec20"
+            ]
+          },
+          "nodeID": "6371be63df2d552cb844ec21",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371be71df2d552cb844ec2a": {
+          "type": "url",
+          "data": {
+            "name": "",
+            "url": "https://telegram.org/",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6371be71df2d552cb844ec2c"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371be71df2d552cb844ec2a"
+        },
+        "6371be71df2d552cb844ec2b": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "6371be71df2d552cb844ec2a"
+            ]
+          },
+          "nodeID": "6371be71df2d552cb844ec2b",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371be7cdf2d552cb844ec34": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "start00000000000000000000",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371be7cdf2d552cb844ec34"
+        },
+        "6371be7cdf2d552cb844ec35": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "6371be7cdf2d552cb844ec34"
+            ]
+          },
+          "nodeID": "6371be7cdf2d552cb844ec35",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371bef9df2d552cb844ec5e": {
+          "type": "cardV2",
+          "data": {
+            "name": "Card",
+            "title": "Below are some relevant team resources",
+            "buttons": [
+              {
+                "id": "y85183glv",
+                "name": "HR, Insurance, Docs 📃",
+                "intent": null
+              },
+              {
+                "id": "9u52s3gvm",
+                "name": "Expense Reports 💰",
+                "intent": null
+              },
+              {
+                "id": "kg53w3g83",
+                "name": "Request Absence ⛵️\\",
+                "intent": null
+              },
+              {
+                "id": "yd55g3ggr",
+                "name": "Facilities 🚧",
+                "intent": null
+              },
+              {
+                "id": "rm5703g0f",
+                "name": "Back to start 🔄",
+                "intent": null
+              }
+            ],
+            "imageUrl": "https://cm4-production-assets.s3.amazonaws.com/1668399191046-minitower.png",
+            "description": [
+              {
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "portsV2": {
+              "byKey": {
+                "y85183glv": {
+                  "id": "6371bf52df2d552cb844ec66",
+                  "target": "6371bf56df2d552cb844ec69",
+                  "type": "",
+                  "data": {}
+                },
+                "9u52s3gvm": {
+                  "id": "6371bf63df2d552cb844ec70",
+                  "target": "6371bfb7df2d552cb844ec79",
+                  "type": "",
+                  "data": {}
+                },
+                "kg53w3g83": {
+                  "id": "6371bf6edf2d552cb844ec72",
+                  "target": "6371bfc0df2d552cb844ec81",
+                  "type": "",
+                  "data": {}
+                },
+                "yd55g3ggr": {
+                  "id": "6371bf8adf2d552cb844ec74",
+                  "target": "6371bff1df2d552cb844ec87",
+                  "type": "",
+                  "data": {}
+                },
+                "rm5703g0f": {
+                  "id": "6371bf97df2d552cb844ec76",
+                  "target": null,
+                  "type": "",
+                  "data": {}
+                }
+              },
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "6371bef9df2d552cb844ec60"
+                },
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6371bef9df2d552cb844ec5f"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371bef9df2d552cb844ec5e"
+        },
+        "6371bef9df2d552cb844ec61": {
+          "type": "block",
+          "data": {
+            "name": "Admin",
+            "steps": [
+              "6371bef9df2d552cb844ec5e"
+            ],
+            "color": "#CB627B"
+          },
+          "nodeID": "6371bef9df2d552cb844ec61",
+          "coords": [
+            770.4831790924072,
+            -713.4500808715821
+          ]
+        },
+        "6371bf56df2d552cb844ec68": {
+          "type": "url",
+          "data": {
+            "name": "",
+            "url": "https://hr.com",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6371bf56df2d552cb844ec6a"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371bf56df2d552cb844ec68"
+        },
+        "6371bf56df2d552cb844ec69": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "6371bf56df2d552cb844ec68"
+            ]
+          },
+          "nodeID": "6371bf56df2d552cb844ec69",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371bfb7df2d552cb844ec78": {
+          "type": "url",
+          "data": {
+            "name": "",
+            "url": "https://concur.com",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6371bfb7df2d552cb844ec7a"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371bfb7df2d552cb844ec78"
+        },
+        "6371bfb7df2d552cb844ec79": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "6371bfb7df2d552cb844ec78"
+            ]
+          },
+          "nodeID": "6371bfb7df2d552cb844ec79",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371bfc0df2d552cb844ec80": {
+          "type": "goToNode",
+          "data": {
+            "name": "",
+            "nodeID": "63409a51806073c10de81d8a",
+            "diagramID": "6371c9b4c8ff0d00074de5a6",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371bfc0df2d552cb844ec80"
+        },
+        "6371bfc0df2d552cb844ec81": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "6371bfc0df2d552cb844ec80"
+            ]
+          },
+          "nodeID": "6371bfc0df2d552cb844ec81",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371bff1df2d552cb844ec86": {
+          "type": "url",
+          "data": {
+            "name": "",
+            "url": "https://www.cbre.us/real-estate-services/occupier/workplace",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "6371bff1df2d552cb844ec88"
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371bff1df2d552cb844ec86"
+        },
+        "6371bff1df2d552cb844ec87": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "6371bff1df2d552cb844ec86"
+            ]
+          },
+          "nodeID": "6371bff1df2d552cb844ec87",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371c3350c0072f418ead6b3": {
+          "type": "block",
+          "data": {
+            "name": "New User Greetings",
+            "steps": [
+              "6371ab210f2927d36dfc35da"
+            ],
+            "color": ""
+          },
+          "nodeID": "6371c3350c0072f418ead6b3",
+          "coords": [
+            -224.2498222265802,
+            -116.17027451491131
+          ]
+        },
+        "6371c3900c0072f418ead6cf": {
+          "type": "text",
+          "data": {
+            "name": "Text",
+            "texts": [
+              {
+                "id": "7vpu3x3f",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "How can I help?"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "532vb3xuv",
+                "content": [
+                  {
+                    "children": [
+                      {
+                        "text": "Anything else I can help with? "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "canvasVisibility": "preview",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "6371aaf00f2927d36dfc35ad",
+                  "id": "6371c3900c0072f418ead6d0",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -63.23796614747852,
+                          -245.45146157240646
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -0.4437995825371317,
+                          -245.45146157240646
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -0.4437995825371317,
+                          -149.57028367018478
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          62.35036698240425,
+                          -149.57028367018478
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "6371c3900c0072f418ead6cf"
+        },
+        "6371c3900c0072f418ead6d2": {
+          "type": "block",
+          "data": {
+            "name": "Repeat User",
+            "color": "",
+            "steps": [
+              "6371c3900c0072f418ead6cf"
+            ]
+          },
+          "nodeID": "6371c3900c0072f418ead6d2",
+          "coords": [
+            -229.2498222265802,
+            -344.1702745149114
+          ]
+        },
+        "6371c7f00c0072f418eadeb3": {
+          "type": "ifV2",
+          "data": {
+            "name": "If",
+            "expressions": [
+              {
+                "type": null,
+                "name": "Returning User",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "equals",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "hasVisited"
+                      },
+                      {
+                        "type": "value",
+                        "value": "true"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": null,
+                "name": "New User",
+                "value": [
+                  {
+                    "logicInterface": "variable",
+                    "type": "not_equal",
+                    "value": [
+                      {
+                        "type": "variable",
+                        "value": "hasVisited"
+                      },
+                      {
+                        "type": "value",
+                        "value": "true"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "noMatch": {
+              "type": "none",
+              "pathName": "No match"
+            },
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "else": {
+                  "type": "else",
+                  "target": null,
+                  "id": "6371c7f00c0072f418eadeb5"
+                }
+              },
+              "dynamic": [
+                {
+                  "id": "6371c8390c0072f418eadec8",
+                  "type": "",
+                  "target": "6371c3900c0072f418ead6d2",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -473.2379102797853,
+                          -221.44275637553702
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -433.74383831933613,
+                          -221.44275637553702
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -433.74383831933613,
+                          -317.17031260417474
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -394.249766358887,
+                          -317.17031260417474
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "",
+                  "target": "6371ab210f2927d36dfc35da",
+                  "id": "6371c7f00c0072f418eadeb4",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -473.2379102797853,
+                          -166.95056887553702
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -431.74965191796895,
+                          -166.95056887553702
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -431.74965191796895,
+                          -36.693780621752786
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      },
+                      {
+                        "point": [
+                          -390.2613935561526,
+                          -36.693780621752786
+                        ],
+                        "toTop": false,
+                        "locked": false,
+                        "reversed": false,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "nodeID": "6371c7f00c0072f418eadeb3",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "6371c7f00c0072f418eadeb6": {
+          "type": "block",
+          "data": {
+            "name": "New Block 27",
+            "steps": [
+              "6371c7f00c0072f418eadeb3"
+            ]
+          },
+          "nodeID": "6371c7f00c0072f418eadeb6",
+          "coords": [
+            -639.2498222265798,
+            -301.16539170241134
+          ]
+        }
+      }
+    }
+  },
+  "variableStates": [
+    {
+      "_id": "6371c9b4c8ff0d00074de5a7",
+      "name": "new user",
+      "startFrom": null,
+      "variables": {
+        "hasVisited": "0"
+      },
+      "projectID": "6371c9b4c8ff0d00074de5a2"
+    },
+    {
+      "_id": "6371c9b4c8ff0d00074de5a8",
+      "name": "Veteran",
+      "startFrom": null,
+      "variables": {
+        "hasVisited": "true"
+      },
+      "projectID": "6371c9b4c8ff0d00074de5a2"
+    }
+  ]
+}
