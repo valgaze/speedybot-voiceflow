@@ -75,8 +75,15 @@ CultureBot.onSubmit(async ($bot, msg) => {
     }
     const tidyResponse = vf_inst.simplifyResponse(res);
     const { hasEnd } = tidyResponse;
+    const { text, cards, choices, images } = tidyResponse;
 
-    if (hasEnd) {
+    const restEmpty =
+      text.length === 0 &&
+      cards.length === 0 &&
+      choices.length === 0 &&
+      images.length === 0;
+
+    if (hasEnd && restEmpty) {
       // If reach terminal part of conversation don't leave user hanging
       const res = await vf_inst.launch(session);
       await processResponse($bot, vf_inst.simplifyResponse(res));

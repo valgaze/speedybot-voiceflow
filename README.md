@@ -64,7 +64,7 @@ VOICEFLOW_KEY=VF.DM.12345cbc8ef.sjaPjTtrgn
 
 - Start up your agent
 
-Note: By default your agent will communicate using webhooks agent you won't need to worry about details like deployment or webhooks. Later down the line if you need to deploy your agent on a server or serverless function **[see here](https://github.com/valgaze/speedybot-mini/tree/deploy/examples/#examples)**
+Note: By default your agent will communicate using websockets, so you won't need to worry about details like deployment or webhooks. Later down the line if you need to deploy your agent on a server or serverless function **[see here](https://github.com/valgaze/speedybot-mini/tree/deploy/examples/#examples)**
 
 ```
 npm run dev
