@@ -100,8 +100,24 @@ export class VFHelper {
   }
 
   public simplifyText(textPayload: VF_TEXT): SimpleText {
+    const { children } = textPayload.payload?.slate.content[0] || [];
+    const text: string[] = [];
+    children.forEach((child) => {
+      if (child.url) {
+        let label = child.url;
+        if (child.children) {
+          const [firstSubChild] = child.children;
+          if (firstSubChild.text) {
+            label = firstSubChild.text;
+          }
+        }
+        text.push(`<a href="${child.url}">${label}</a>`);
+      } else if (child.text) {
+        text.push(child.text);
+      }
+    });
     return {
-      text: textPayload.payload.message,
+      text: text.join(" "),
     };
   }
 
@@ -398,6 +414,17 @@ export type VF_TEXT<T = any> = {
       content: {
         children: {
           text: string;
+          url?: string;
+          children?: {
+            text: string;
+            color: {
+              r: number;
+              g: number;
+              b: number;
+              a: 1;
+            };
+            underline: boolean;
+          }[];
         }[];
       }[];
     };
