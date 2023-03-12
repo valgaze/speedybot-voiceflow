@@ -76,7 +76,11 @@ npm run dev
 
 ![img](./docs/assets/first_spin.gif)
 
-## 7) Build your agent
+## 7) Deploy your agent
+
+If you're looking for a zero-hassle way to deploy your agent, see the **[deploy-options directions](./deploy-options/README.md)** for batteries-included samples to deploy to severless/container-less options like **[AWS Lambda](https://aws.amazon.com/lambda/)** or a **[V8 Isolate](https://developers.cloudflare.com/workers/learning/how-workers-works/)**
+
+## 8) Build upon your agent
 
 - From here you can make content changes in Voiceflow (make sure to hit **[publish](#4-publish-your-voiceflow-agent)**) without having to update/deploy code
 

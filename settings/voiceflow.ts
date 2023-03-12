@@ -1,4 +1,3 @@
-import { fetch } from "cross-fetch";
 import { makeRequest } from "speedybot-mini/dist/src/lib/common";
 import { BotInst } from "speedybot-mini";
 // todo: tidy types up

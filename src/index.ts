@@ -10,14 +10,16 @@ dotenv.config({ path: path.resolve(__dirname, "..", ".env") });
 import CultureBot from "./../settings/config";
 
 const token = process.env.BOT_TOKEN as string;
+const VOICEFLOW_KEY = process.env.VOICEFLOW_KEY as string;
 if (!token) {
   console.log("\n## Token missing (check .env file)");
   process.exit(0);
 }
-main(token);
+main(token, VOICEFLOW_KEY);
 
-async function main(token: string) {
+async function main(token: string, VOICEFLOW_KEY: string) {
   CultureBot.setToken(token);
+  CultureBot.addSecret("VOICEFLOW_KEY", VOICEFLOW_KEY);
   const inst = new Websocket(token);
   await inst.start();
   console.log(logoRoll());
