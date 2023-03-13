@@ -9,12 +9,10 @@ import {
 } from "./voiceflow";
 
 // Auth secrets
-const { BOT_TOKEN, VOICEFLOW_KEY } = process.env;
+type MySecrets = "VOICEFLOW_KEY";
+const CultureBot = new Speedybot<MySecrets>("");
 
-const CultureBot = new Speedybot(BOT_TOKEN);
 export default CultureBot;
-
-const vf_inst = new VFHelper(VOICEFLOW_KEY as string);
 
 // Clear the board
 CultureBot.contains(["$clear", "reset"], async ($bot) => $bot.clearScreen());
@@ -22,6 +20,9 @@ CultureBot.contains(["$clear", "reset"], async ($bot) => $bot.clearScreen());
 // Runs on every text interaction
 CultureBot.nlu(async ($bot, msg) => {
   try {
+    const vf_inst = new VFHelper(
+      CultureBot.getSecret("VOICEFLOW_KEY") as string
+    );
     const session = msg.authorId;
     let hasVisited = await vf_inst.getData<true | null>("hasVisited", session);
 
@@ -52,6 +53,7 @@ CultureBot.nlu(async ($bot, msg) => {
 
 // Buttons, chips, card transmissions
 CultureBot.onSubmit(async ($bot, msg) => {
+  const vf_inst = new VFHelper(CultureBot.getSecret("VOICEFLOW_KEY") as string);
   if (
     msg.data.inputs[VF_SUBMIT_LABEL] ||
     msg.data.inputs[VF_SUBMIT_LABEL_INTENT]
